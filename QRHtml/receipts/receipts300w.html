@@ -146,17 +146,27 @@
       </div>
 
       <div class="button-container">
-          <button class="print-button">
-           <i class="fas fa-print"></i> Print Receipt
-         </button>
+        <button class="print-button" onclick="printReceipt()">
+          <i class="fas fa-print"></i> Print Receipt
+        </button>
       </div>
-
-      
     </div>
   </div>
 
   <footer class="footer">
-    <div class="footer-content">© 2024 - TRA Receipt Verification Portal</div>
+    <div class="footer-content">© 2025 - TRA Receipt Verification Portal</div>
   </footer>
+
+  <script>
+    function printReceipt() {
+      const printContents = document.querySelector('.receipt-content').innerHTML;
+      const originalContents = document.body.innerHTML;
+
+      document.body.innerHTML = printContents;
+      window.print();
+      document.body.innerHTML = originalContents;
+      location.reload(); // refresh to restore the page state
+    }
+  </script>
 </body>
 </html>
