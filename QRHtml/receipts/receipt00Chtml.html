@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EFD | Receipt Verification</title>
+  <link rel="stylesheet" href="../style.css">
+
+  <link rel="icon" href="../img/TRA.jpg" type="image/x-icon">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+ 
+ <nav class="navbar">
+    <div class="navbar-content">
+      <span class="navbar-text">TAXPAYER RECEIPT VERIFICATION PORTAL</span>
+    </div>
+  </nav>
+
+
+
+  <div class="receipt-container">
+    <div class="receipt-content">
+      <div class="legal-receipt-header">
+        <strong>***START OF LEGAL RECEIPT***</strong>
+      </div>
+      <div class="logo">
+        <img src="../img/tra.png" alt="logo" class="logo-img">
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="company-details">
+        <div class="company-name"> JMAX HOTEL </div>
+        <div class="contact-details">
+          
+          <p><strong>TIN:</strong>143756293 </p>
+          <p><strong>P.O BOX:</strong> 12150 MANYONI </p>
+          <p><strong>VRN:</strong> 40004319D </p>
+        </div>
+        <div class="serial-no">
+          <p><strong>SERIAL NO:</strong> 03TZ843005374 </p>
+          <p><strong>UIN:</strong> 01133F -10587530412533565503TZ843005374 </p>
+        </div>
+        <div class="tax-office">
+          <p><strong>TAX OFFICE:</strong> Tax Office Mayoni </p>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="customer-details">
+        <p><strong>CUSTOMER NAME:</strong> </p>
+        <p><strong>CUSTOMER ID TYPE:</strong> BUYER,S TIN </p>
+        <p><strong>CUSTOMER ID:</strong> </p>
+
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="receipt-info">
+        <p><strong>RECEIPT NO:</strong> <span id="receiptDate"> 1473 </span></p>
+        <p><strong> Z NUMBER: </strong> <span id="receiptDate"> 3/0954 </span></p>
+        <p><strong>RECEIPT DATE:</strong> <span id="receiptDate">2025-06-17 </span></p>
+        <p><strong>RECEIPT TIME:</strong> <span id="receiptTime"> 14:55:56 PM</span></p>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- Purchased Items Section -->
+      <h3 style="color: grey;">Purchased Items</h3>
+      <hr style="border-top: dotted 1px;">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="table-container">
+    <table class="receipt-table">
+        <thead>
+            <tr>
+                <th>Description</th>
+                <th>Qty</th>
+                <th>Amount</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td style="border-bottom: none;"> FOOD & DRINKS </td>
+                <td style="border-bottom: none;">1</td>
+                <td colspan="2" style="text-align: right; padding-right: 10px; border-bottom: none;"> 108,000.00
+        </tbody>
+    </table>
+
+    <br>
+     <br>
+      
+
+    <table class="receipt-table">
+      <tr>
+        <td>Total Excl of Tax:</td>
+        <td colspan="2" style="text-align: right; padding-right: 10px;"> 88,560.00 </td>
+     </tr>
+     <tr>
+        <td>Tax Rate A (18%):</td>
+        <td colspan="2" style="text-align: right; padding-right: 10px;"> 19,440.00 </td>
+    </tr>
+    <tr>
+        <td>Total Tax:</td>
+        <td colspan="2" style="text-align: right; padding-right: 10px;"> 19,440.00</td>
+    </tr>
+    <tr>
+        <td>Total Incl of Tax:</td>
+        <td colspan="2" style="text-align: right; padding-right: 10px;"> 108,000.00 </td>
+    </tr>
+        </tbody>
+    </table>
+
+
+
+</div>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="receipt-verification-code">
+        <strong>RECEIPT VERIFICATION CODE</strong>
+      </div>
+
+      <div class="passkey">
+        <p><span id="passkey"> ED443F1473 </span></p>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="qr-code">
+        <img src="../img/QR/receipt00C.png" alt="QR Code" class="qr-img">
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="legal-receipt-footer">
+        <span>***END OF LEGAL RECEIPT***</span>
+      </div>
+
+      <div class="button-container">
+          <button class="print-button">
+           <i class="fas fa-print"></i> Print Receipt
+         </button>
+      </div>
+
+      
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">© 2025 - TRA Receipt Verification Portal</div>
+  </footer>
+</body>
+</html>
