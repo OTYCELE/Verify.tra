@@ -225,9 +225,9 @@ body {
   border-bottom: 1px solid #ddd;
 }
 
-.receipt-table tbody tr:nth-child(odd) {
+ /* .receipt-table tbody tr:nth-child(odd) {
   background-color: #f9f9f9; /* Light gray background for odd rows */
-}
+} */
 
 .receipt-table td {
   border-bottom: 1px solid #ddd;
