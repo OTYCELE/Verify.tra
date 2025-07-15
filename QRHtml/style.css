@@ -50,7 +50,7 @@ body {
   max-width: 600px;          /* Limit the maximum width */
   margin-left: auto;         /* Center the container */
   margin-right: auto;
-  border: 1px solid #d1d1d1;
+  border: 1px solid #e5e5e5;
   padding: 20px;             /* Add padding for better readability */
   box-sizing: border-box;    /* Ensures padding doesn’t increase overall width */
   margin-bottom: 8px;
