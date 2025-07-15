@@ -217,7 +217,7 @@ body {
 .receipt-table td {
   padding: 10px;
   text-align: left;
-  color: #607D8B; */ Grayish-blue color */
+  color: #607D8B; /* Grayish-blue color */
 }
 
 .receipt-table th {
@@ -225,15 +225,10 @@ body {
   border-bottom: 1px solid #ddd;
 }
 
- .receipt-table tbody tr:nth-child(odd) {
-  background-color: white; /* Light gray background for odd rows */
-} 
-
 .receipt-table td {
   border-bottom: 1px solid #ddd;
   font-size: 16px;
 }
-
 
 .print-button {
   background-color: #FDEE02; /* Bright yellow background */
