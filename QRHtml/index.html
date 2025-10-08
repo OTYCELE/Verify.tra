@@ -3,155 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EFD | Receipt Verification</title>
-  <link rel="stylesheet" href="../style.css">
-  <link rel="icon" href="../img/TRA.jpg" type="image/x-icon">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <title>Taxpayer Receipt Verification Portal</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
- 
-  <nav class="navbar">
-    <div class="navbar-content">
-      <span class="navbar-text">TAXPAYER RECEIPT VERIFICATION PORTAL</span>
-    </div>
-  </nav>
+<body class="bg-[#F7F7F7] flex flex-col min-h-screen">
 
-  <div class="receipt-container">
-    <div class="receipt-content">
-      <div class="legal-receipt-header">
-        <strong>***START OF LEGAL RECEIPT***</strong>
-      </div>
-      <div class="logo">
-        <img src="../img/tra.png" alt="logo" class="logo-img">
-      </div>
-
-      <div class="divider"></div>
-
-      <div class="company-details">
-        <div class="company-name">EGC SUPPLIES LTD</div>
-        <div class="contact-details">
-          <p><strong>MOBILE:</strong> 0713 236 287</p>
-          <p><strong>TIN:</strong>172820325</p>
-          <p><strong>P.O BOX:</strong></p>
-          <p><strong>VRN:</strong>*NOT REGISTERED*</p>
-        </div>
-        <div class="serial-no">
-          <p><strong>SERIAL NO:</strong> 03TZ844828311</p>
-          <p><strong>UIN:</strong> 01133M -10781512119903286503TZ842028300</p>
-        </div>
-        <div class="tax-office">
-          <p><strong>TAX OFFICE:</strong> Tax Office Ilala</p>
-        </div>
-      </div>
-
-      <div class="divider"></div>
-
-      <div class="customer-details">
-        <p><strong>CUSTOMER NAME:</strong>PATRIA INSURANCE BROKERS LTD</p>
-        <p><strong>CUSTOMER ID TYPE:</strong> BUYER'S TIN </p>
-        <p><strong>CUSTOMER ID:</strong> 158292211 </p>
-      </div>
-
-      <div class="divider"></div>
-
-      <div class="receipt-info">
-        <p><strong>RECEIPT NO:</strong> <span id="receiptNo">368</span></p>
-        <p><strong>Z NUMBER:</strong> <span id="zNumber">6/0398</span></p>
-        <p><strong>RECEIPT DATE:</strong> <span id="receiptDate">2025-05-22</span></p>
-        <p><strong>RECEIPT TIME:</strong> <span id="receiptTime">14:07:24 PM</span></p>
-      </div>
-
-      
-      <h3 style="color: grey;">Purchased Items</h3>
-      <hr style="border-top: dotted 1px;">
-      <div class="row">
-        <div class="col-xs-12">
-          <div class="table-container">
-            <table class="receipt-table">
-              <thead>
-                <tr>
-                  <th>Description</th>
-                  <th>Qty</th>
-                  <th>Amount</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td style="border-bottom: none;">HP COLOUR LASERJET PRINTER</td>
-                  <td style="border-bottom: none;">1</td>
-                  <td style="text-align: right; padding-right: 10px; border-bottom: none;">1,150,000.00</td>
-                </tr>
-              </tbody>
-            </table>
-
-            <br><br>
-
-            <table class="receipt-table">
-              <tr>
-                <td>Total Excl of Tax:</td>
-                <td colspan="2" style="text-align: right; padding-right: 10px;">1,150,000.00</td>
-              </tr>
-              <tr>
-                <td>Tax Rate A (18%):</td>
-                <td colspan="2" style="text-align: right; padding-right: 10px;">00.00</td>
-              </tr>
-              <tr>
-                <td>Total Tax:</td>
-                <td colspan="2" style="text-align: right; padding-right: 10px;">00.00</td>
-              </tr>
-              <tr>
-                <td>Total Incl of Tax:</td>
-                <td colspan="2" style="text-align: right; padding-right: 10px;">1,150,000.00</td>
-              </tr>
-            </table>
-          </div>
-        </div>
-      </div>
-
-      <div class="divider"></div>
-
-      <div class="receipt-verification-code">
-        <strong>RECEIPT VERIFICATION CODE</strong>
-      </div>
-
-      <div class="passkey">
-        <p><span id="passkey">6E3T4B368</span></p>
-      </div>
-
-      <div class="divider"></div>
-
-      <div class="qr-code">
-        <img src="../img/QR/QRCode67.png" alt="QR Code" class="qr-img">
-      </div>
-
-      <div class="divider"></div>
-
-      <div class="legal-receipt-footer">
-        <span>***END OF LEGAL RECEIPT***</span>
-      </div>
-
-      <div class="button-container">
-        <button class="print-button" onclick="printReceipt()">
-          <i class="fas fa-print"></i> Print Receipt
-        </button>
-      </div>
-    </div>
+  <!-- Header -->
+  <div class="bg-[#FDEE02] text-center py-4">
+    <h1 class="text-lg font-semibold text-[#5A738E]">TAXPAYER RECEIPT VERIFICATION PORTAL</h1>
   </div>
+  <div class="h-3 bg-gray-800"></div>
 
-  <footer class="footer">
-    <div class="footer-content">© 2025 - TRA Receipt Verification Portal</div>
+  <!-- Main Content -->
+  <main class="flex-grow flex justify-center py-10">
+    <div class="container mx-auto px-4">
+      <div class="flex justify-center">
+        <!-- Wider Container with Thin Border -->
+        <div class="w-full sm:w-11/12 md:w-7/12 lg:w-5/12 bg-white border border-gray-300 p-8 text-center">
+
+          <!-- Logo + Title Row -->
+          <div class="flex items-center justify-center gap-4 mb-4">
+            <img src="img/tra.png" alt="TRA Logo" class="w-16 h-16">
+            <h2 class="text-xl font-medium text-[#73879C]">Receipt Verification</h2>
+          </div>
+
+          <hr class="mb-6">
+
+          <!-- Input -->
+          <div class="text-left mb-4">
+            <label for="code" class="block text-sm font-semibold text-gray-600 mb-2">
+              Enter Receipt Verification Code
+            </label>
+            <input id="code" type="text"
+                   class="w-full border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#FDEE02]">
+          </div>
+
+          <!-- Button with tick icon -->
+          <button class="w-full bg-[#FDEE02] hover:bg-yellow-300 text-black font-semibold py-2 rounded flex items-center justify-center gap-2">
+            <img src="img/tick.png" alt="Tick Icon" class="h-6 w-6">
+            Verify Receipt
+          </button>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center text-sm text-gray-600 py-4 bg-white">
+    © 2025 - TRA Receipt Verification Portal
   </footer>
 
-  <script>
-    function printReceipt() {
-      const printContents = document.querySelector('.receipt-content').innerHTML;
-      const originalContents = document.body.innerHTML;
+  <!-- Bottom Strip -->
+  <div class="h-3 bg-[#2A3F54]"></div>
 
-      document.body.innerHTML = printContents;
-      window.print();
-      document.body.innerHTML = originalContents;
-      location.reload(); // refresh to restore the page state
-    }
-  </script>
 </body>
 </html>
